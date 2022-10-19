@@ -1,0 +1,16 @@
+{
+  "name": "tutorials",
+  "version": "1.0.0",
+  "description": "The monorepo for vuenoob.com's tutorial projects",
+  "main": "",
+  "keywords": [
+    "vuenoob",
+    "vue",
+    "nuxt"
+  ],
+  "author": "",
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "@moonrepo/cli": "^0.17.0"
+  }
+}
