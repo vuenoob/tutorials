@@ -8,9 +8,13 @@
     "vue",
     "nuxt"
   ],
-  "author": "",
+  "author": "james sinkala <xinnks@gmail.com>",
   "license": "Apache 2.0",
   "devDependencies": {
     "@moonrepo/cli": "^0.17.0"
-  }
+  },
+  "engines": {
+    "node": "18.12.0"
+  },
+  "packageManager": "pnpm@7.14.0"
 }
