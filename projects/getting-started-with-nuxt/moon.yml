@@ -1,0 +1,66 @@
+---
+type: "application"
+project:
+  name: "gswn"
+  description: "Getting started with Nuxt project"
+  channel: "#tutorials"
+  owner: "vuenoob"
+  maintainers: ["sinkala.james"]
+language: "javascript"
+tasks:
+  lint:
+    command:
+      - "eslint"
+      - "--ext .js,.vue --ignore-path .eslintignore ."
+    platform: "node"
+    options:
+      runInCI: false
+      outputStyle: "stream"
+  lintfix:
+    command:
+      - "eslint"
+      - "--fix"
+      - "--ext .js,.vue"
+      - "--ignore-path .eslintignore ."
+    platform: "node"
+    options:
+      runInCI: false
+      outputStyle: "stream"
+  dev:
+    command: "nuxt"
+    platform: "node"
+    options:
+      runInCI: false
+      outputStyle: "stream"
+    deps:
+      - "~:lint"
+  start:
+    command: "nuxt"
+    args:
+      - "start"
+    platform: "node"
+    options:
+      runInCI: false
+      outputStyle: "stream"
+    deps:
+      - "~:lint"
+  build:
+    command: "nuxt"
+    args:
+      - "build"
+    platform: "node"
+    options:
+      runInCI: true
+      outputStyle: "stream"
+    deps:
+      - "~:lintfix"
+  generate:
+    command: "nuxt"
+    args:
+      - "generate"
+    platform: "node"
+    options:
+      runInCI: false
+      outputStyle: "stream"
+    deps:
+      - "~:lintfix"
