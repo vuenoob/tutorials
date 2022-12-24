@@ -27,25 +27,15 @@ tasks:
       runInCI: false
       outputStyle: "stream"
   dev:
-    command: "nuxt"
+    command: "nuxt dev"
     platform: "node"
     options:
       runInCI: false
       outputStyle: "stream"
     deps:
-      - "~:lint"
-  start:
-    command: "nuxt"
-    args:
-      - "start"
-    platform: "node"
-    options:
-      runInCI: false
-      outputStyle: "stream"
-    deps:
-      - "~:lint"
+      # - "~:lint"
   build:
-    command: "nuxt"
+    command: "nuxt build"
     args:
       - "build"
     platform: "node"
@@ -53,9 +43,9 @@ tasks:
       runInCI: true
       outputStyle: "stream"
     deps:
-      - "~:lintfix"
+      # - "~:lintfix"
   generate:
-    command: "nuxt"
+    command: "nuxt generate"
     args:
       - "generate"
     platform: "node"
@@ -63,4 +53,4 @@ tasks:
       runInCI: false
       outputStyle: "stream"
     deps:
-      - "~:lintfix"
+      # - "~:lintfix"
