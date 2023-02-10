@@ -1,4 +1,4 @@
-# VUenoob Tutorials
+# Vuenoob Tutorials
 
 
 This is a monorepo housing all of [vuenoob](https://github.com/vuenoob)'s tutorials.
