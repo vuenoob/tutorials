@@ -1,0 +1,22 @@
+---
+type: "application"
+project:
+  name: "pnr"
+  description: "Pages and routing in Nuxt"
+  channel: "#tutorials"
+  owner: "vuenoob"
+  maintainers: ["sinkala.james"]
+language: "javascript"
+tasks:
+  dev:
+    command: "nuxt dev"
+    platform: "node"
+  build:
+    command: "nuxt build"
+    platform: "node"
+  generate:
+    command: "nuxt generate"
+    platform: "node"
+  preview:
+    command: "nuxt preview"
+    platform: "node"
